@@ -14,7 +14,7 @@ import { SobrenosComponent } from './pages/sobrenos/sobrenos.component';
 
 
 export const routes: Routes = [
-    {path: 'home ', component: MainscreenComponent},
+    {path: '', component: MainscreenComponent},
     {path: 'login', component: LoginComponent},
     {path: 'registro', component: RegistroComponent},
     {path: 'sobrenos', component: SobrenosComponent},
@@ -24,7 +24,7 @@ export const routes: Routes = [
 
 
 ];
-@NgModule({
+ @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
