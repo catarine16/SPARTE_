@@ -1,14 +1,13 @@
 body{
     background-image: url(/assets/img/background.png);
-    
     background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
     background-repeat: no-repeat;
     background-position: center; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 20px;
-    position: relative;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    position: relative;
 }

@@ -1,6 +1,6 @@
 import { Component, NgModule } from '@angular/core';
-import { Router, RouterModule} from '@angular/router';
-import { Routes } from '@angular/router';
+import {RouterModule, Routes} from '@angular/router';
+
 
 
 //  pages
@@ -16,15 +16,18 @@ import { SobrenosComponent } from './pages/sobrenos/sobrenos.component';
 export const routes: Routes = [
     {path: '', component: MainscreenComponent},
     {path: 'login', component: LoginComponent},
-    {path: 'registro', component: RegistroComponent},
+    {path: 'registrar', component: RegistroComponent},
     {path: 'sobrenos', component: SobrenosComponent},
     {path: 'aprender', component: AprenderComponent},
+    {path:'artistas', component: ArtsComponent},
+    {path: 'inspiração', component: InspiracaoComponent},
+    
 
 
 
 
 ];
- @NgModule({
+@NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })

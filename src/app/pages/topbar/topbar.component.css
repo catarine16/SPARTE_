@@ -83,14 +83,17 @@ header {
     margin-right: 20px;
     border-radius: 30px;
     border: none;
+    margin-left: 450px;
 }
 
 .search-input {
     flex-grow: 1;
-    padding: 9px;
+    padding: 5px;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
     font-size: 18px;
+    background-color: #c2afaf;
+    outline: none;
 }
 
 .search-icon {
