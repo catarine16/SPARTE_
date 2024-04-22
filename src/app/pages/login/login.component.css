@@ -93,3 +93,21 @@ button[disabled] {
     color: #333; /* cor do texto */
     text-align: center; /* centralizar o texto */
   }
+
+
+  /* responsividade */
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+    /* Adicione estilos específicos para dispositivos móveis aqui */
+  }
+  
+  /* Estilos para notebooks e tablets */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Adicione estilos específicos para notebooks e tablets aqui */
+  }
+  
+  /* Estilos para monitores médios e grandes */
+  @media only screen and (min-width: 1025px) {
+    /* Adicione estilos específicos para monitores médios e grandes aqui */
+  }
+  
