@@ -59,6 +59,7 @@ header {
     color: #ffffff;
     font-weight: bold;
     font-size: 30px;
+    margin-left: 310px;
     margin-right: 10px;
 }
 
@@ -67,37 +68,6 @@ header {
     color: #00CCFF;
     font-size: xx-large;
     font-weight: bold;
-}
-
-
-.search-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: #c2afaf;
-    padding: 10px;
-    margin-right: 20px;
-    border-radius: 30px;
-    border: none;
-    margin-left: 450px;
-}
-
-.search-input {
-    flex-grow: 1;
-    padding: 5px;
-    border: none;
-    border-radius: 10px;
-    font-size: 18px;
-    background-color: #c2afaf;
-    outline: none;
-}
-
-.search-icon {
-    padding: 8px;
-    background-color: transparent;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
 }
 
 
@@ -130,11 +100,11 @@ header {
 
 
 a.nav {
-    font-size: medium;
+    font-size: 15pt;
     text-decoration: none;
     text-align: center;
-    margin-right: 10px;
-    margin-left: 60px;
+    margin-right: 30px;
+    margin-left: 20px;
     color: #fff;
     font-weight: bold;
 }
@@ -214,9 +184,6 @@ a.nav {
         display: none;
     }
 
-    .perfil {
-        display: none;
-    }
 
     .search-container {
         display: none;
@@ -230,35 +197,30 @@ a.nav {
         display: none;
     }
 
-    .search-container {
-        display: none;
-    }
-
-    .search-container {
-        display: none;
-
-
-    }
-
     .head-link {
        align-items: center;
     }
   }
   
   /* Estilos para notebooks e tablets */
-  @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    
-        .search-container{
-            display: none;
-        }
-        .search-input{
-            display: none;
-        }
+  @media only screen and (min-width: 601px) and (max-width: 1135px) {
+    .perfil{
+        display: none;
+    }
+    .head-link{
+        margin-left: 22px;
+    }
+   a.nav{
+    font-size: medium;
+    margin: 0 auto;
+    margin-left: 40px;
+
+   }
      
      
   }
   /* Estilos para monitores médios e grandes */
-  @media only screen and (min-width: 1025px) {
+  @media only screen and (min-width: 1136px) {
 
 
   }
