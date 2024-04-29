@@ -111,7 +111,20 @@ a.nav {
 
 /* RESPONSIVIDADEZINHA */
 /* Estilos para dispositivos móveis */
+@media only screen and (max-width: 599) {
+    .navbar {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 15%;
+        padding: 7px;
+        z-index: 1000;
+        font-size: 7pt;
+    }
 
+}
+/* Estilos para dispositivos móveis */
 @media only screen and (max-width: 600px) {
     .navbar {
         display: block;
@@ -122,10 +135,6 @@ a.nav {
         padding: 7px;
         z-index: 1000;
         font-size: 7pt;
-    }
-
-    .navbar.open {
-        display: block;
     }
 
     .close-button {
