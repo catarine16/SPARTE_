@@ -3,9 +3,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #700404;
-    padding: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px;
     z-index: 999;
 }
 
@@ -16,29 +14,50 @@ header {
     left: -1000px;
     width: 250px;
     height: 100%;
-    background: url("/assets/img/fundo-nav.png") no-repeat center/cover;
+    background: url("/assets/img/fundo-nav.jpeg") no-repeat center/cover;
     color: #fff;
     transition: left 0.3s;
 }
 
+/* Estilos para a lista de itens da barra de navegação */
 .navbar ul {
     list-style: none;
-    padding: 0;
+    padding: 0px;
 }
 
+/* Estilos para os itens da barra de navegação */
 .navbar li {
     padding: 20px;
     position: relative;
+    list-style: none;
 }
 
+/* Estilos para os links da barra de navegação */
 .navbar a {
     text-decoration: none;
     color: #fff;
-    font-weight: bold;
+    padding: 7px;
+    border: none;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    gap: 48px;
+
 }
-.navbar a:hover{
+
+/* Estilos para os links da barra de navegação ao passar o mouse */
+.navbar a:hover {
+    background-color: #b7f526;
     color: #5ca800;
-    font-weight: bolder;
+}
+
+a.item {
+    font-size: 13pt;
+    text-decoration: none;
+    margin-right: 60px;
+    margin-left: 30px;
+    font-weight: 600;
 }
 
 .head-hd {
@@ -47,39 +66,24 @@ header {
     list-style: none;
     padding: 0;
     height: 55px;
-}
+   
+/*//////////////////////////*/
+
 
 .head-item {
-    margin-right: 90px;
+    margin-right: 245px;
     text-align: center;
 }
 
-.head-link {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 30px;
-    margin-left: 310px;
-    margin-right: 10px;
-}
-
-.head-titulo {
-    text-decoration: none;
-    color: #00CCFF;
-    font-size: xx-large;
-    font-weight: bold;
-}
-
-
 .menu-icon {
-    color: #ffffff;
-    font-size: 50px;
-    margin-right: 20px;
+    color: #cc190c;
+    font-size: 30px;
+    margin-right: 30px;
     cursor: pointer;
+    padding-left: 20px;
 }
 
-
-
+/* Estilos para o botão de fechar */
 .close-button {
     position: absolute;
     top: 10px;
@@ -88,10 +92,19 @@ header {
     cursor: pointer;
     background-color: transparent;
     border: none;
-    color: #fff;
+    color: #cecece;
+    transition: background-color 0.3s, color 0.3s;
+    font-optical-sizing: auto;
+    border-radius: 10px;
 }
 
+.close-button:hover{
+    color: #d80c0c;
+    background-color: #8d0808;
+    border-radius: 10px;
+}
 
+/* Estilos para o perfil */
 .perfil {
     position: absolute;
     right: 0;
@@ -99,15 +112,8 @@ header {
 }
 
 
-a.nav {
-    font-size: 15pt;
-    text-decoration: none;
-    text-align: center;
-    margin-right: 30px;
-    margin-left: 20px;
-    color: #fff;
-    font-weight: bold;
-}
+
+
 
 /* RESPONSIVIDADEZINHA */
 /* Estilos para dispositivos móveis */
@@ -232,4 +238,4 @@ a.nav {
   @media only screen and (min-width: 1136px) {
 
 
-  }
+  }}
