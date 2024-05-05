@@ -2,10 +2,16 @@ body {
     height: 100vh;
 }
 form {
-    width: 300px;
+    width: 500px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffb4b4;
+    font-size: 20pt;
 }
 input {
     border: none;
+    background-color: #cf9090;
+    font-size: medium;
 }
 input,
 button {
@@ -76,14 +82,15 @@ button[disabled] {
     display: none;
 } 
 .container {
-    width: 30%; /* largura do container */
+    width: 25%; /* largura do container */
     margin: 0 auto; /* centralizar o container na página */
-    padding: 90px; /* espaçamento interno do container */
-    background-color: #e6c7c7; /* cor de fundo do container */
-    border-radius: 8px; /* arredondamento das bordas do container */
+    padding: 80px; /* espaçamento interno do container */
+    background-color: #e95252; /* cor de fundo do container */
+    border-radius: 30px; /* arredondamento das bordas do container */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra do container */
     display: flex; /* usar flexbox para alinhar os elementos */
     flex-direction: column; /* alinhar os elementos na vertical */
+    height: 50%;
     align-items: center; /* alinhar os elementos no centro horizontal */
   }
   
