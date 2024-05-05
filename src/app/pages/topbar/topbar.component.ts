@@ -1,5 +1,4 @@
 import { Component, ElementRef, Renderer2 } from '@angular/core';
-
 @Component({
   selector: 'app-topbar',
   standalone: true,

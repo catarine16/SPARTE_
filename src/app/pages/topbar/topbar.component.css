@@ -1,3 +1,4 @@
+
 header {
     position: fixed;
     top: 0;
@@ -135,7 +136,6 @@ a.item:hover::before {
     right: 0;
     padding-right: 25px;
 }
-
 
 /* RESPONSIVIDADEZINHA */
 /* Estilos para dispositivos móveis */
