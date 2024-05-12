@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "sparte-angular-teste": {
+      "hosting": {
+        "sparte": [
+          "sparte-angular-teste"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "sparte-angular-teste"
+  }
+}

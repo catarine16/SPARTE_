@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Sparte": {
+    "sparte": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -26,7 +26,6 @@
             ],
             "styles": [
               "src/styles.css"
-              
             ],
             "scripts": []
           },
@@ -89,6 +88,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "sparte:build:production",
+              "serveTarget": "sparte:serve:production"
+            },
+            "development": {
+              "buildTarget": "sparte:build:development",
+              "serveTarget": "sparte:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
