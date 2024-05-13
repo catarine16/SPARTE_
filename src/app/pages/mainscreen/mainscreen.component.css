@@ -73,6 +73,16 @@
     transform: translateX(-78%); 
 }
 
+.home-img {
+    width: 145%;
+    
+}
+
+.home-img img{
+    max-width: 100%; 
+    height: auto; 
+}
+
 @media (max-width:785px) {
    
     .home{
