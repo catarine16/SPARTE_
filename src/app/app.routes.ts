@@ -20,7 +20,7 @@ export const routes: Routes = [
     {path: 'sobrenos', component: SobrenosComponent},
     {path: 'aprender', component: AprenderComponent},
     {path:'artistas', component: ArtsComponent},
-    {path: 'inspiração', component: InspiracaoComponent},
+    {path: 'inspiracao', component: InspiracaoComponent},
     
 
 
