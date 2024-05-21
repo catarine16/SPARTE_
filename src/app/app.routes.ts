@@ -16,10 +16,10 @@ import { SobrenosComponent } from './pages/sobrenos/sobrenos.component';
 export const routes: Routes = [
     {path: '', component: MainscreenComponent},
     {path: 'login', component: LoginComponent},
-    {path: 'registrar', component: RegistroComponent},
+    {path: 'registro', component: RegistroComponent},
     {path: 'sobrenos', component: SobrenosComponent},
     {path: 'aprender', component: AprenderComponent},
-    {path:'artistas', component: ArtsComponent},
+    {path:'arts', component: ArtsComponent},
     {path: 'inspiracao', component: InspiracaoComponent},
     
 
