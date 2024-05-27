@@ -4,6 +4,9 @@ import { provideRouter } from '@angular/router';
 import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
 import { getStorage, provideStorage } from '@angular/fire/storage';
 import { provideAuth, getAuth } from '@angular/fire/auth';
+import { ReactiveFormsModule } from '@angular/forms'; // Importar ReactiveFormsModule
+
+
 
 import { routes } from './app.routes';
 

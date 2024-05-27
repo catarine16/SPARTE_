@@ -1,5 +1,8 @@
 import { Component, NgModule } from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms'; // Importar ReactiveFormsModule
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 
 
 
@@ -29,6 +32,6 @@ export const routes: Routes = [
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule, ReactiveFormsModule]
 })
 export class AppRoutingModule { }
