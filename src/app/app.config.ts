@@ -9,6 +9,7 @@ import { ReactiveFormsModule } from '@angular/forms'; // Importar ReactiveFormsM
 
 
 import { routes } from './app.routes';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 const firebaseConfig = {
   apiKey: "AIzaSyD0iKGNhTflF_lNhbDnPcXFOymMk2iw4uA",
@@ -26,7 +27,7 @@ export const appConfig: ApplicationConfig = {
     provideFirebaseApp(() => initializeApp(firebaseConfig)),
     provideStorage(() => getStorage()),
     provideAuth(() => getAuth()),
-  ]),
+  ]), provideAnimationsAsync(),
 ], 
 };
 
