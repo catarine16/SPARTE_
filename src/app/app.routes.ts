@@ -1,9 +1,10 @@
 import { Component, NgModule } from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms'; // Importar ReactiveFormsModule
+import { ReactiveFormsModule } from '@angular/forms'; 
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
-
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 
 //  pages
@@ -31,7 +32,11 @@ export const routes: Routes = [
 
 ];
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  
+  imports: [RouterModule.forRoot(routes),
+    MatIconModule,
+    MatButtonModule
+  ],
   exports: [RouterModule, ReactiveFormsModule]
 })
 export class AppRoutingModule { }
