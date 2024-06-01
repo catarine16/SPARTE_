@@ -1,42 +1,25 @@
-<!doctype html>
-
-<html>
-
-<head>
-    <title>Login</title>
-</head>
-
-<body class="centralize">
-<div class="container">  
-    <form>
-        <div class="form-field">
-            <div><label>Email</label></div>
-            <input type="email" name="email" id="email" placeholder="seu@email.com" onchange="onChangeEmail()"/>
-            <div class="error" id="email-required-error">Email é obrigatório</div>
-            <div class="error" id="email-invalid-error">Email é inválido</div>
+<div class="login-container">
+  
+    <h2>Login</h2>
+    <form formGroup="loginForm">
+      
+      <div class="form-field">
+        <label>Email</label>
+        <input type="email" formControlName="email" placeholder="seu@email.com"/>
+        <div class="error" *ngIf="email.touched && email.invalid">
+          <div *ngIf="email.errors?.required">Email é obrigatório</div>
+          <div *ngIf="email.errors?.email">Email é inválido</div>
         </div>
-        <div class="form-field">
-            <div><label>Senha</label></div>
-            <input type="password" name="password" id="password" placeholder="Senha" onchange="onChangePassword()"/>
-            <div class="error" id="password-required-error">Senha é obrigatória</div>
+      </div>
+      <div class="form-field">
+        <label>Senha</label>
+        <input type="password" formControlName="password" placeholder="Senha"/>
+        <div class="error" *ngIf="password.touched && password.invalid">
+          <div *ngIf="password.errors?.required">Senha é obrigatória</div>
         </div>
-        <div>
-            <button type="button" class="clear" id="recover-password-button" onclick="recoverPassword()" disabled="true" style="color: rgb(12, 12, 12);">Recuperar senha</button>
-        </div>
-        <div>
-            <button type="button" class="solid" id="login-button" disabled="true" onclick="login()">Entrar</button>
-        </div>
-        <div>
-            <button type="button" class="outline" onclick="register()">Registrar</button>
-        </div>
+      </div>
+      <button type="button" class="clear" (click)="recoverPassword()" [disabled]="!loginForm.valid">Recuperar senha</button>
+      <button type="button" class="solid" (click)="login()" [disabled]="!loginForm.valid">Entrar</button>
+      <button type="button" class="outline" (click)="register()">Registrar</button>
     </form>
-</div>
-</body>
-
- <script src="index.js"></script>
-<script src="validations.js"></script>
-<script src="loading.js"></script>
-
-<script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth-compat.js"></script>
-<script src="./firebase-init.js"></script> 
+  </div>

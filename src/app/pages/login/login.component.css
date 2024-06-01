@@ -1,119 +1,127 @@
+/* Fundo da página */
 body {
-    height: 100vh;
-}
-form {
-    width: 500px;
-    text-align: center;
-    font-weight: bold;
-    color: #ffb4b4;
-    font-size: 20pt;
-}
-input {
-    border: none;
-    background-color: #cf9090;
-    font-size: medium;
-}
-input,
-button {
-   padding: 20px;
-   width: -webkit-fill-available;
-   border-radius: 25px;
-   
-}
-button {
-    margin-bottom: 10px;
-}
-
-.form-field {
-    margin-bottom: 10px;
-}
-/* global.css */
-body {
-    margin: 0;
-}
-
-.centralize {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.loading {
-    background: rgba(0, 0, 0, 0.5);
-    position: fixed;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Container do formulário */
+  .login-container {
+    background: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
     width: 100%;
-    height: 100%;
+    box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.loading label {
-    font-size: 24px;
-}
-
-button {
-    cursor: pointer;
-}
-button:active {
-    opacity: 0.8;
-}
-button[disabled] {
-    opacity: 0.8;
-}
-
-.clear {
-    background: transparent;
-    border: none;
-    color: white;
-}
-.solid {
-    background: rgb(0, 145, 77);
-    border: none;
-    color: rgba(203, 254, 224, 0.952);
-    font-weight: bolder;
-}
-.outline {
-    background: rgb(73, 73, 220);
-    color: rgb(83, 244, 255);
-    border: 1px solid white;
-    font-weight: bolder;
-}
-
-.error {
-    background: red;
-    color: white;
+  
+  
+  .form-field label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  .form-field input {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  }
+  
+  .form-field input:focus {
+    border-color: #2575fc;
+    outline: none;
+  }
+  
+  /* Título do formulário */
+  .login-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5em;
+  }
+  
+  /* Campos do formulário */
+  .form-field {
+    margin-bottom: 1.5em;
+  }
+  
+  /* Mensagens de erro */
+  .error {
+    color: #e74c3c;
+    font-size: 0.875em;
+    margin-top: 0.5em;
     display: none;
-} 
-.container {
-    width: 25%; /* largura do container */
-    margin: 0 auto; /* centralizar o container na página */
-    padding: 80px; /* espaçamento interno do container */
-    background-color: #e95252; /* cor de fundo do container */
-    border-radius: 30px; /* arredondamento das bordas do container */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra do container */
-    display: flex; /* usar flexbox para alinhar os elementos */
-    flex-direction: column; /* alinhar os elementos na vertical */
-    height: 50%;
-    align-items: center; /* alinhar os elementos no centro horizontal */
   }
   
-  /* Estilo do texto dentro do container */
-  .container h1 {
-    color: #333; /* cor do texto */
-    text-align: center; /* centralizar o texto */
-  }
-
-
-  /* responsividade */
-/* Estilos para dispositivos móveis */
-@media only screen and (max-width: 600px) {
-    /* Adicione estilos específicos para dispositivos móveis aqui */
+  .form-field input.ng-invalid.ng-touched + .error {
+    display: block;
   }
   
-  /* Estilos para notebooks e tablets */
-  @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    /* Adicione estilos específicos para notebooks e tablets aqui */
+  /* Botões */
+  button {
+    width: 100%;
+    padding: 0.75em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 1em;
   }
   
-  /* Estilos para monitores médios e grandes */
-  @media only screen and (min-width: 1025px) {
-    /* Adicione estilos específicos para monitores médios e grandes aqui */
+  button.clear {
+    background-color: #f0f0f0;
+    color: #555;
+  }
+  
+  button.clear:hover {
+    background-color: #e0e0e0;
+  }
+  
+  button.solid {
+    background-color: #2575fc;
+    color: white;
+  }
+  
+  button.solid:hover {
+    background-color: #1a5bb8;
+  }
+  
+  button.outline {
+    background-color: transparent;
+    border: 2px solid #2575fc;
+    color: #2575fc;
+  }
+  
+  button.outline:hover {
+    background-color: #2575fc;
+    color: white;
+  }
+  
+  /* Estilo adicional */
+  .login-container div {
+    text-align: center;
+  }
+  
+  .login-container a {
+    color: #2575fc;
+    text-decoration: none;
+  }
+  
+  .login-container a:hover {
+    text-decoration: underline;
   }
   
