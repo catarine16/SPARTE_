@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* register.component.css */
 
 .register-container {
@@ -37,6 +38,57 @@
     font-weight: bold;
   }
   
+=======
+form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #cccccc;
+}
+
+input.ng-invalid.ng-touched {
+  border-color: #dc3545;
+}
+
+div .error-message {
+  color: #dc3545;
+  font-size: 0.875em;
+}
+>>>>>>> eeab62cffd16b73640cb4e88add60f009d19cb81
 
 
 /* responsividade */

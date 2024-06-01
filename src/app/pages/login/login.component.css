@@ -1,7 +1,10 @@
 /* Fundo da página */
 body {
     background: linear-gradient(to right, #6a11cb, #2575fc);
+<<<<<<< HEAD
     font-family: Arial, sans-serif;
+=======
+>>>>>>> eeab62cffd16b73640cb4e88add60f009d19cb81
     display: flex;
     justify-content: center;
     align-items: center;

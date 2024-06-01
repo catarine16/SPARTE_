@@ -1,6 +1,8 @@
 import { Component, NgModule } from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-
+import { ReactiveFormsModule } from '@angular/forms'; 
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 
 
 //  pages
@@ -28,7 +30,10 @@ export const routes: Routes = [
 
 ];
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  
+  imports: [RouterModule.forRoot(routes),
+ 
+  ],
+  exports: [RouterModule, ReactiveFormsModule]
 })
 export class AppRoutingModule { }
