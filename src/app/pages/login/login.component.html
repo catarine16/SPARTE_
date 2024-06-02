@@ -1,11 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
+<div class="login-container">
   
-</body>
-</html>
+  <h2>Login</h2>
+  <form formGroup="loginForm">
+    
+    <div class="form-field">
+      <label>Email</label>
+      <input type="email" formControlName="email" placeholder="seu@email.com"/>
+      <div class="error" *ngIf="email.touched && email.invalid">
+        <div *ngIf="email.errors?.required">Email é obrigatório</div>
+        <div *ngIf="email.errors?.email">Email é inválido</div>
+      </div>
+    </div>
+    <div class="form-field">
+      <label>Senha</label>
+      <input type="password" formControlName="password" placeholder="Senha"/>
+      <div class="error" *ngIf="password.touched && password.invalid">
+        <div *ngIf="password.errors?.required">Senha é obrigatória</div>
+      </div>
+    </div>
+    <button type="button" class="clear" (click)="recoverPassword()" [disabled]="!loginForm.valid">Recuperar senha</button>
+    <button type="button" class="solid" (click)="login()" [disabled]="!loginForm.valid">Entrar</button>
+    <button type="button" class="outline" (click)="register()">Registrar</button>
+  </form>
+</div>

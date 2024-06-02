@@ -1,130 +1,126 @@
 /* Fundo da página */
 body {
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-<<<<<<< HEAD
-    font-family: Arial, sans-serif;
-=======
->>>>>>> eeab62cffd16b73640cb4e88add60f009d19cb81
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  /* Container do formulário */
-  .login-container {
-    background: white;
-    padding: 2em;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-    box-sizing: border-box;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
-  
-  
-  .form-field label {
-    display: block;
-    margin-bottom: 0.5em;
-    color: #555;
-    font-weight: bold;
-  }
-  
-  .form-field input {
-    width: 100%;
-    padding: 0.75em;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box;
-    transition: border-color 0.3s;
-  }
-  
-  .form-field input:focus {
-    border-color: #2575fc;
-    outline: none;
-  }
-  
-  /* Título do formulário */
-  .login-container h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 1.5em;
-  }
-  
-  /* Campos do formulário */
-  .form-field {
-    margin-bottom: 1.5em;
-  }
-  
-  /* Mensagens de erro */
-  .error {
-    color: #e74c3c;
-    font-size: 0.875em;
-    margin-top: 0.5em;
-    display: none;
-  }
-  
-  .form-field input.ng-invalid.ng-touched + .error {
-    display: block;
-  }
-  
-  /* Botões */
-  button {
-    width: 100%;
-    padding: 0.75em;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    margin-bottom: 1em;
-  }
-  
-  button.clear {
-    background-color: #f0f0f0;
-    color: #555;
-  }
-  
-  button.clear:hover {
-    background-color: #e0e0e0;
-  }
-  
-  button.solid {
-    background-color: #2575fc;
-    color: white;
-  }
-  
-  button.solid:hover {
-    background-color: #1a5bb8;
-  }
-  
-  button.outline {
-    background-color: transparent;
-    border: 2px solid #2575fc;
-    color: #2575fc;
-  }
-  
-  button.outline:hover {
-    background-color: #2575fc;
-    color: white;
-  }
-  
-  /* Estilo adicional */
-  .login-container div {
-    text-align: center;
-  }
-  
-  .login-container a {
-    color: #2575fc;
-    text-decoration: none;
-  }
-  
-  .login-container a:hover {
-    text-decoration: underline;
-  }
-  
+
+/* Container do formulário */
+.login-container {
+  background: white;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+
+.form-field label {
+  display: block;
+  margin-bottom: 0.5em;
+  color: #555;
+  font-weight: bold;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 0.75em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.form-field input:focus {
+  border-color: #2575fc;
+  outline: none;
+}
+
+/* Título do formulário */
+.login-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5em;
+}
+
+/* Campos do formulário */
+.form-field {
+  margin-bottom: 1.5em;
+}
+
+/* Mensagens de erro */
+.error {
+  color: #e74c3c;
+  font-size: 0.875em;
+  margin-top: 0.5em;
+  display: none;
+}
+
+.form-field input.ng-invalid.ng-touched + .error {
+  display: block;
+}
+
+/* Botões */
+button {
+  width: 100%;
+  padding: 0.75em;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-bottom: 1em;
+}
+
+button.clear {
+  background-color: #f0f0f0;
+  color: #555;
+}
+
+button.clear:hover {
+  background-color: #e0e0e0;
+}
+
+button.solid {
+  background-color: #2575fc;
+  color: white;
+}
+
+button.solid:hover {
+  background-color: #1a5bb8;
+}
+
+button.outline {
+  background-color: transparent;
+  border: 2px solid #2575fc;
+  color: #2575fc;
+}
+
+button.outline:hover {
+  background-color: #2575fc;
+  color: white;
+}
+
+/* Estilo adicional */
+.login-container div {
+  text-align: center;
+}
+
+.login-container a {
+  color: #2575fc;
+  text-decoration: none;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}

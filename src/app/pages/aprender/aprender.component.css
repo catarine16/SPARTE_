@@ -7,19 +7,20 @@ body {
 .intro{
   text-align: center;
   color: #393131;
-  margin-top: 50px;
+  margin-top: 90px;
   font-size: 35pt;
+  
 }
 .container {
   max-width: 1200px;
   margin: 20px auto;
   padding: 0 20px;
-  
+
 }
 .card {
   background-color: #fff;
   border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.732);
   margin-bottom: 20px;
   padding: 20px;
 }
@@ -137,12 +138,13 @@ background-color: #f569b8;
 }
 #anm{
 background-color: #c15df3;
+
 }
 #anm a{
   color: rgb(84, 1, 84);
 }
 #anm a:hover{
-  color: #230034;
+  color: #8f26c3;
 }
 #anm h2{
   color: #4a046d;
