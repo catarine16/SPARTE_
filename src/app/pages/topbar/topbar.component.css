@@ -5,10 +5,8 @@ header {
     left: 0;
     right: 0;
     padding: 0px;
-    z-index: 999;
+    z-index: 1000;
 }
-
-
 .navbar img {
     width: 100px;
     height: 100px;
@@ -78,7 +76,7 @@ header {
 
 .navbar a:hover::before {
     width: 100%;
-    background-color: #811300;
+    background-color: #5e1212;
 }
 
 

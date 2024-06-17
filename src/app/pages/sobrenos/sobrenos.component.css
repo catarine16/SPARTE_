@@ -35,7 +35,7 @@
 .name {
   font-weight: bolder;
   font-size: 18pt;
- 
+  font-family: "Sedgwick Ave Display", cursive;
 }
  
 .role {
@@ -78,6 +78,7 @@
   color: #FFF8E1;
   font-weight: bolder;
   text-align: center;
+  font-family: "Sedgwick Ave Display", cursive;
 }
 .ps {
   color: #FFF8E1;
@@ -88,12 +89,14 @@
   color: #c95919;
   font-size: 20pt;
   text-align: center;
+  font-family: "Sedgwick Ave Display", cursive;
  
 }
 .fn{
   text-align: center;
   color: rgb(51, 51, 51);
   font-size: 30pt;
+  font-family: "Sedgwick Ave Display", cursive;
 }
 /* responsividade */
 /* Estilos para dispositivos móveis */
